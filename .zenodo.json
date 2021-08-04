@@ -1,0 +1,21 @@
+{
+    "creators": [
+        {   
+            "orcid": "0000-0002-3483-0008",
+            "affiliation": "Santander Meteorology Group. Instituto de Física de Cantabria (CSIC-UC), Santander, Spain",
+            "name": "Fernández, Jesús"
+        },
+        {   
+            "affiliation": "Santander Meteorology Group, Dept of Applied Mathematics and Computer Science, Universidad de Cantabria, Santander, Spain",
+            "name": "Doe, John"
+        }
+   ],    
+
+    "license": "Creative-Commons-Attribution-4.0",
+
+    "title": "The test repo",
+
+    "keywords": ["Test", "Repo", "Zenodo"],
+
+    "grants": [{"id":"PID2020-116595RB-I00"}]
+}
