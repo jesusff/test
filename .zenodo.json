@@ -11,11 +11,11 @@
         }
    ],    
 
-    "license": {"id":"cc-by-4.0"},
+    "license": "CC-BY-4.0",
 
     "title": "The test repo",
 
     "keywords": ["Test", "Repo", "Zenodo"],
 
-    "grants": [{"id":"774652"}, {"id":"824084"}]
+    "grants": [{"id":"774652", }, {"id":"824084"}]
 }
