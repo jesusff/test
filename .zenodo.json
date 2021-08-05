@@ -13,9 +13,9 @@
 
     "license": "CC-BY-4.0",
 
-    "title": "The test repo",
+    "title": "The final test repo",
 
     "keywords": ["Test", "Repo", "Zenodo"],
-
-    "grants": [{"id":"774652", }, {"id":"824084"}]
+    
+    "description": "<p>This is a frozen, final release of the ... </p>"
 }
