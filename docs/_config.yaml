@@ -1,4 +1,4 @@
 collections:
   models:
     output: true
-    permalink: /models/:collection/:path/:basename
+    permalink: /models/:path/:basename
