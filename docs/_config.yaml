@@ -1,9 +1,16 @@
-# theme: jekyll-theme-minimal
+theme: jekyll-theme-minima
 
 collections:
   models:
     output: true
   permalink: /:collection/:basename
+
+defaults:
+  - scope:
+      path: ""
+      type: "models"
+    values:
+      layout: "model"
 
 # Jekyll 3 now only supports Kramdown for Markdown
 kramdown:
