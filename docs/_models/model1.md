@@ -1,6 +1,8 @@
 ---
 layout: default
-title: Model 1
+source-id: Model1
+label: Model 1
+extended_label: My model 1 extended label
 description: A description of Model 1
 atmosphere:
   resolution: 1 degree

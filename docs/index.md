@@ -1,6 +1,5 @@
 ---
 layout: default
-title: Regional Coupled Models
 ---
 
 # Regional Coupled Models
@@ -10,6 +9,7 @@ title: Regional Coupled Models
     <tr>
       <th>Model</th>
       <th>Description</th>
+      <th>Extended label</th>
     </tr>
   </thead>
   <tbody>
@@ -17,6 +17,7 @@ title: Regional Coupled Models
     <tr>
       <td><a href="{{ model.url }}">{{ model.title }}</a></td>
       <td>{{ model.description }}</td>
+      <td>{{ model.label_extended }}</td>
     </tr>
     {% endfor %}
   </tbody>
