@@ -1,19 +1,21 @@
 ---
-layout: default
-title: Model 2 title
-description: A description of Model 2
+layout: model
+label: Model2 A
+label-extended: Model 2 title
+source-id: model2A
 atmosphere:
+  label: WRF v3.8.1
   resolution: 1 degree
   levels: 30
 ocean:
+  label: NEMO v12.4
   resolution: 0.5 degree
   levels: 40
 land:
+  label: CLM 4.8
   resolution: 0.25 degree
   levels: 20
 ---
-
-# Model 2 content title
 
 ## Atmosphere
 Resolution: {{ page.atmosphere.resolution }}
