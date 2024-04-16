@@ -1,12 +1,23 @@
 ---
-layout: model
+source-id: Model1
 label: Model 1
 label-extended: My model 1 extended label
-source-id: Model1
 atmosphere:
   label: ALADIN 6.5
   resolution: 0.25 degree
   levels: 30
+  TOA: 10 hPa
+  physics:
+    radiation:
+      label: Lopez
+      description: blah blah
+      reference: Lopez (2002)
+      reference-url: http://doi.org/XXXX
+    convection:
+      label: PCMT
+      description: blah blah
+      reference: Smith et al. (2020)
+      reference-url: http://doi.org/XXXX
 ocean:
   label: ORCA 5.2
   resolution: 0.25 degree
@@ -24,6 +35,32 @@ Resolution: {{ page.atmosphere.resolution }}
 Levels: {{ page.atmosphere.levels }}
 
 Describe atmos
+
+### Physics
+
+<table>
+  <thead>
+    <tr>
+      <th>Physics</th>
+      <th>Scheme</th>
+      <th>Details</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for phys in page.atmosphere.physics %}
+    <tr>
+      {% for item in phys %}
+        <td>{{ item[1] }}</td>
+      {% endfor %}
+      <td>{{ phys }}</td>
+      <td>{{ phys.label }}</td>
+      <td>{{ phys.description }}</td>
+      <td><a href="{{ phys.reference-url }}">{{ phys.reference }}</a></td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
 
 ## Ocean
 Resolution: {{ page.ocean.resolution }}
