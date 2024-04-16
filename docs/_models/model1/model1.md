@@ -50,13 +50,10 @@ Describe atmos
   <tbody>
     {% for phys in page.atmosphere.physics %}
     <tr>
-      {% for item in phys %}
-        <td>{{ item[1] }}</td>
-      {% endfor %}
-      <td>{{ phys }}</td>
-      <td>{{ phys.label }}</td>
-      <td>{{ phys.description }}</td>
-      <td><a href="{{ phys.reference-url }}">{{ phys.reference }}</a></td>
+      <td>{{ phys | first }}</td>
+      <td>{{ phys[1].label }}</td>
+      <td>{{ phys[1].description }}</td>
+      <td><a href="{{ phys[1].reference-url }}">{{ phys[1].reference }}</a></td>
     </tr>
     {% endfor %}
   </tbody>
