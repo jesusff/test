@@ -35,7 +35,7 @@ land:
 Resolution: {{ page.atmosphere.resolution }}
 Levels: {{ page.atmosphere.levels }}
 
-{% include physics-atm.html source-id=page.source-id %}
+{% include physics-atm.html name=page.name %}
 
 ## Ocean
 Resolution: {{ page.ocean.resolution }}
