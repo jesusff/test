@@ -1,0 +1,6 @@
+{% assign model = site.models | find:"source-id",include.source-id %}
+
+<p>
+  Resolution: {{ model[include.component].resolution }}, {{ model[include.component].levels }} levels
+</p>
+

@@ -1,7 +1,4 @@
-{% assign model = site.models | where:"source-id",include.source-id | first %}
-{{ site.models | inspect }}
-{{ include.source-id | inspect }}
-{{ model | inspect }}
+{% assign model = site.models | find:"source-id",include.source-id %}
 
 <table>
   <thead>
