@@ -4,6 +4,8 @@ layout: default
 
 # Regional Coupled Models
 
+A brief summary table of all models and their basic components. This is built automatically from the model file front matter metadata.
+
 <table>
   <thead>
     <tr>
@@ -30,6 +32,8 @@ layout: default
 </table>
 
 ## Atmospheric components
+
+Other tables can be built. E.g. for specific components, showing any info collected in the front matter.
 
 <table>
   <thead>
