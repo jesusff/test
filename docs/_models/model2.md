@@ -1,7 +1,7 @@
 ---
 source-id: model2A
 label: Model2 A
-label-extended: Model 2 title
+label_extended: Model 2 title
 atmosphere:
   label: WRF v3.8.1
   resolution: 1 degree
