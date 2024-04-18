@@ -41,6 +41,8 @@ Further information:
  * [CNRM-ALADIN at umr-cnrm.fr](https://www.umr-cnrm.fr/spip.php?article125&lang=en)
  * ...
 
+{% include toc %}
+
 ## Atmosphere
 {% include resolution-summary.html source-id=page.source_id component="atmosphere" %}
 
