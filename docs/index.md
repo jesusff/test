@@ -19,7 +19,7 @@ layout: default
     {% for model in site.models %}
     <tr>
       <td><a href="{{ site.baseurl }}{{ model.url }}">{{ model.label }}</a></td>
-      <td>{{ model.source-id }}</td>
+      <td>{{ model.source_id }}</td>
       <td>{{ model.label_extended }}</td>
       <td>{{ model.atmosphere.label }}</td>
       <td>{{ model.land.label }}</td>
@@ -28,4 +28,32 @@ layout: default
     {% endfor %}
   </tbody>
 </table>
+
+## Atmospheric components
+
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>Atmosphere</th>
+      <th>Resolution</th>
+      <th>Levels</th>
+      <th>Radiation</th>
+      <th>...</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for model in site.models %}
+    <tr>
+      <td><a href="{{ site.baseurl }}{{ model.url }}">{{ model.label }}</a></td>
+      <td>{{ model.atmosphere.label }}</td>
+      <td>{{ model.atmosphere.resolution }}</td>
+      <td>{{ model.atmosphere.levels }}</td>
+      <td>{{ model.atmosphere.radiation.label }}</td>
+      <td> ... <td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
 

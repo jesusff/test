@@ -1,5 +1,5 @@
 ---
-source-id: Model1
+source_id: Model1
 label: Model 1
 label_extended: My model 1 extended label
 atmosphere:
@@ -23,7 +23,7 @@ ocean:
   resolution: 0.25 degree
   levels: 40
 land:
-  label: ORCHIDEE 7
+  label: MyLand 7
   resolution: 1/12 degree
   levels: 10
 ---
@@ -31,44 +31,38 @@ land:
 Intro on the coupled model. 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
+An example how to add an image. Upload to the images/ folder and voilà!
+![image tooltip here](/images/model1-test-image.png)
+
+Further information:
+
+ * [CNRM-ALADIN at umr-cnrm.fr](https://www.umr-cnrm.fr/spip.php?article125&lang=en)
+ * ...
+
 ## Atmosphere
-Resolution: {{ page.atmosphere.resolution }}
-Levels: {{ page.atmosphere.levels }}
+{% include resolution-summary.html source-id=page.source_id component="atmosphere" %}
 
 Describe atmos component. 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 ### Physics
 
-<table>
-  <thead>
-    <tr>
-      <th>Physics</th>
-      <th>Scheme</th>
-      <th>Details</th>
-      <th>Reference</th>
-    </tr>
-  </thead>
-  <tbody>
-    {% for phys in page.atmosphere.physics %}
-    <tr>
-      <td>{{ phys | first }}</td>
-      <td>{{ phys[1].label }}</td>
-      <td>{{ phys[1].description }}</td>
-      <td><a href="{{ phys[1].reference-url }}">{{ phys[1].reference }}</a></td>
-    </tr>
-    {% endfor %}
-  </tbody>
-</table>
+Overall description of the physics. We can add a summary table built automatically from the front matter metadata:
+
+{% include physics-atm.html source-id=page.source_id %}
 
 ## Ocean
-Resolution: {{ page.ocean.resolution }}
-Levels: {{ page.ocean.levels }}
+{% include resolution-summary.html source-id=page.source_id component="ocean" %}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 ## Land
-Resolution: {{ page.land.resolution }}
-Levels: {{ page.land.levels }}
+{% include resolution-summary.html source-id=page.source_id component="land" %}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+## Urban
+
+### References
+
+ * Daniel M., Lemonsu A., Déqué M., Somot S., Alias A., Masson V. (2019) [Benefits of explicit urban parameterization in regional climate modeling to study climate and city interactions](doi:10.1007/s00382-018-4289-x). Climate Dynamics, 52(5-6), 2745-2764, doi:10.1007/s00382-018-4289-x

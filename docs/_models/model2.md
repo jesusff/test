@@ -1,5 +1,5 @@
 ---
-source-id: model2A
+source_id: model2A
 label: Model2 A
 label_extended: Model 2 title
 atmosphere:
@@ -32,7 +32,7 @@ land:
 ---
 
 ## Atmosphere
-{% include resolution-summary.html source-id=page.source-id component="atmosphere" %}
+{% include resolution-summary.html source-id=page.source_id component="atmosphere" %}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
@@ -40,15 +40,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-{% include physics-atm.html source-id=page.source-id %}
+{% include physics-atm.html source-id=page.source_id %}
 
 ## Ocean
-Resolution: {{ page.ocean.resolution }}
-Levels: {{ page.ocean.levels }}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 ## Land
-Resolution: {{ page.land.resolution }}
-Levels: {{ page.land.levels }}
 
