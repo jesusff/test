@@ -50,7 +50,7 @@ layout: default
       <td>{{ model.atmosphere.resolution }}</td>
       <td>{{ model.atmosphere.levels }}</td>
       <td>{{ model.atmosphere.radiation.label }}</td>
-      <td> ... <td>
+      <td>...<td>
     </tr>
     {% endfor %}
   </tbody>
