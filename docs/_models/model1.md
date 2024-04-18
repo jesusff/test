@@ -32,7 +32,7 @@ Intro on the coupled model.
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 An example how to add an image. Upload to the images/ folder and voilà!
-![image tooltip here](/images/model1-test-image.png)
+![image tooltip here]({{ site.baseurl }}/images/model1-example-image.png)
 
 Further information:
 
