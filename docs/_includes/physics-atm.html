@@ -1,6 +1,6 @@
 
 {{ site.models | inspect }}
-{{ include.name | inspect }}
+{{ include.source-id | inspect }}
 
 <table>
   <thead>
@@ -12,13 +12,17 @@
     </tr>
   </thead>
   <tbody>
-    {% for phys in site.models["{{ include.name }}"].atmosphere.physics %}
+    {% for model in site.models %}
+    {% if model.source-id = include.source-id %}
+    {% for phys in model.atmosphere.physics %}
     <tr>
       <td>{{ phys | first }}</td>
       <td>{{ phys[1].label }}</td>
       <td>{{ phys[1].description }}</td>
       <td><a href="{{ phys[1].reference-url }}">{{ phys[1].reference }}</a></td>
     </tr>
+    {% endfor %}
+    {% endif %}
     {% endfor %}
   </tbody>
 </table>
