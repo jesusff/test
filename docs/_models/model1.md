@@ -33,6 +33,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 An example how to add an image. Upload to the images/ folder and voilà!
 ![image tooltip here]({{ site.baseurl }}/images/model1-example-image.png)
+or even simpler if the image is already available online (no need to upload anything):
+![CNRM logo](https://www.umr-cnrm.fr/squelettes/img/cnrm_beau25.png)
 
 Further information:
 
